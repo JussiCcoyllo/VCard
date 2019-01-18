@@ -1,21 +1,69 @@
 body{
     background-image: url('./codenature.jpg');
     background-size: cover;
-
+    
 }
 .wrapper > div{
-    background:#eee;
+    background: -webkit-linear-gradient(rgb(114, 185, 207), white);
     padding: 1em;
 }
 .wrapper > div:nth-child(odd){
-    background:#ddd;
+    background:-webkit-linear-gradient(bottom, rgb(114, 185, 207), white);
 }
 .wrapper{
+    margin-bottom: 400px;
+    margin-left: 20%;
+    width: 800px;
     display: grid;
     grid-template-columns: 50% 50%; 
+    grid-template-rows: 200px;
+    grid-template-areas: "item1 item2";
     grid-column-gap:1em;
     grid-gap: 1em;
+    justify-content: center;
+    
+}
+#item1, #item2{
+    border-radius: 5px;
+}
+#item1{
+    grid-area: item1;
+    display: flex;
+    flex-flow: row;
+    box-shadow: 2px 2px 4px 4px;
+}
+#item2{
+    grid-area: item2;
+    box-shadow: 2px 2px 4px 4px;
 }
 .photo{
+    padding-left: 50px;
+    width:120px;
+    height:160px;
+}
+.conteneur{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    position: relative;
+    background-color: rgba(0,0,0,2);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.social img{
     
+    width: 30px;
+    height: 30px;
+}
+.social:hover .fond_twi{
+    top: 0;
+
 }
