@@ -3,6 +3,9 @@ body{
     background-size: cover;
     
 }
+h2{
+    color: #
+}
 .wrapper > div{
     background: -webkit-linear-gradient(rgb(114, 185, 207), white);
     padding: 1em;
@@ -21,10 +24,11 @@ body{
     grid-column-gap:1em;
     grid-gap: 1em;
     justify-content: center;
-    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #item1, #item2{
     border-radius: 5px;
+    font color:  #090697;
 }
 #item1{
     grid-area: item1;
@@ -36,10 +40,20 @@ body{
     grid-area: item2;
     box-shadow: 2px 2px 4px 4px;
 }
+h2{
+    color: #090697;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+p{
+    color:  #272652;
+}
 .photo{
     padding-left: 50px;
     width:120px;
     height:160px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 .conteneur{
     margin-top: 100px;
